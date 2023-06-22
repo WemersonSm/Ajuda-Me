@@ -1,12 +1,12 @@
 package com.senai.ajudame.enums;
 
-public enum TipoPessoas {
+public enum PessoaCategoria {
 
-	DOADOR(1), RECEBER_AJUDA(2), ADMIN(3);
+	DOADOR(0), RECEBER_AJUDA(1), ADMIN(2);
 
 	private int code;
 
-	private TipoPessoas(int code) {
+	private PessoaCategoria(int code) {
 		this.code = code;
 	}
 
@@ -14,8 +14,8 @@ public enum TipoPessoas {
 		return code;
 	}
 
-	public static TipoPessoas valueOf(int code) {
-		for (TipoPessoas value : TipoPessoas.values()) {
+	public static PessoaCategoria valueOf(int code) {
+		for (PessoaCategoria value : PessoaCategoria.values()) {
 
 			if (code == value.getCode()) {
 				return value;

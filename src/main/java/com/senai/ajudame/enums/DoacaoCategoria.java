@@ -1,7 +1,7 @@
 package com.senai.ajudame.enums;
 
 public enum DoacaoCategoria {
-	SAUDE(1), ALIMETAR(2), HABITACIONAL(3), OUTROS(4);
+	SAUDE(0), ALIMENTAR(1), HABITACIONAL(2),VESTIMENTA(3),VETERINARIA(4),MOVEIS(5), OUTROS(6);
 
 	private int code;
 

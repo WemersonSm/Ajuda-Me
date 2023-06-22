@@ -15,7 +15,7 @@ import org.springframework.web.context.request.WebRequest;
 @ControllerAdvice
 public class RestResponseEntityExceptionHandler  {
 
-    @ExceptionHandler(value = { RuntimeException.class })
+    @ExceptionHandler(value = { Exception.class })
     protected ResponseEntity<Object> handle(Exception ex, WebRequest request) {
     	Map<String, Object> body = new HashMap<>();
         body.put("message", ex.getMessage());
